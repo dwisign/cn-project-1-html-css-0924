@@ -1,0 +1,29 @@
+/*GLOBAL STYLE*/
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    margin : 0px;
+}
+
+
+.container{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+/*END GLOBAL STYLE*/
+
+
+
+.heroSection{
+    background: darkblue;
+    color: white;
+    text-align: center;
+    padding: 30px 50px;
+    a{
+        color: white;
+    }
+}
