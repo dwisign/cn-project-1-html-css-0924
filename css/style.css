@@ -5,7 +5,8 @@ h2,
 h3,
 h4,
 h5,
-h6{
+h6,
+p{
     margin : 0px;
 }
 
@@ -13,6 +14,7 @@ h6{
 .container{
     max-width: 1024px;
     margin: 0 auto;
+    padding: 0px 30px;
 }
 /*END GLOBAL STYLE*/
 
@@ -23,7 +25,82 @@ h6{
     color: white;
     text-align: center;
     padding: 30px 50px;
+    p{
+        text-align: justify;
+    }
     a{
         color: white;
     }
 }
+
+.menu{
+    margin: 30px 0px;
+    display: flex;
+    .listMenu{
+        display: flex;
+        list-style: none;
+        gap: 30px;
+        .listItem{
+            a{
+                background: darkblue;
+                color: white;
+                padding: 10px 40px;
+                border-radius: 5px;
+                text-decoration: none;
+            }
+            a:hover{
+                background: rgb(2, 2, 196); 
+            }
+        }
+    }
+}
+
+.news{
+    margin: 30px 0px;
+    .newsText{
+        column-count: 3;
+        column-gap: 30px;
+        column-width: 200px;
+        margin-top: 30px;
+    }
+}
+
+.table-responsive{
+    margin: 30px 0px;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+
+    th,td{
+        border: 1px solid black;
+        padding: 5px;
+    }
+
+    th{
+        background: #dedede;
+        text-align: left;
+        
+    }
+    .center{
+        text-align: center
+    }
+}
+
+
+
+
+
+/*MOBILE*/
+@media only screen and (max-width: 1100px) {
+    .menu{
+        .listMenu{
+            flex-direction: column;
+            display: none;
+        }
+    }
+}
+
+
+
